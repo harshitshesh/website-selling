@@ -1,0 +1,260 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+ 
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+   
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+ 
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3; 
+
+}
+/* logo and img */
+#logo{
+    
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 2px 6px;
+    border-radius: 22px 55px 22px;
+}
+ /* navigation bar and ul list style */
+#navbar ul{
+    display: flex;
+    font-family: "Audiowide", sans-serif;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(201, 66, 66);
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 22px;
+    transition: all 0.5s  ;
+
+}
+#navbar ul li a:hover{
+    color: red;
+    background-color: black;
+    
+    transform: rotate(5deg);
+}
+ 
+
+ 
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: " ";
+    /* background: url('homepage.jpg')no-repeat center center/cover; */
+    background: url("homepage.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.70; 
+}
+#home h1{
+    color:#c29e27;
+ 
+ 
+    margin: 20px;
+    text-decoration: underline;
+    text-shadow: 22px -22px 22px blueviolet;
+    
+
+}
+#home p{
+    color:black;
+    text-shadow:22px 22px 22px blueviolet;
+    font-family: "Trirong", serif;
+    font-size: 1.3rem;
+}
+ 
+/* services section */
+#services-content{
+    background-color: #141d22;
+}
+    
+#services{
+display: flex;
+ 
+}
+#services .box{
+   
+    padding: 20px;
+    margin: 15px 40px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    background-color: rgb(173, 165, 172);
+    
+
+}
+ 
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 22px;
+}
+#services .box p{
+    font-family: "Trirong", serif;
+    padding: 15px;
+
+} 
+#services-content h1{
+    color: rgb(179, 76, 90);
+   
+}
+/* client section */
+
+/* #client-section{
+    position: relative;
+    
+} */
+/* #client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('ontherlogo.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 35%;
+    z-index: -1;
+    opacity: 0.30;
+
+} */
+.client-item img{
+    height: 100px;
+     padding: 15px;
+ 
+     display: flex;
+     flex-direction: row;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#client-section{
+    background-color: rgb(207 206 215);
+
+}
+ 
+
+/* contact usform */
+/* #contact{
+    position: relative;
+
+} */
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    background: url("contactform.jpg")no-repeat center center/cover;
+    opacity: 0.7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+ border-radius: 9px;
+ font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Audiowide", sans-serif;
+}
+#contact h1{
+    color: rgb(179, 76, 90);
+}
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 13px 200px;
+
+}
+footer p{
+    padding: 12px;
+     display: flex;
+     position: relative;
+     top: 10px;
+     right: 160px;
+}
+
+
+
+
+
+.h-praimary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-decoration: underline;
+    font-family: "Audiowide", sans-serif;
+}
+.h-secoundary{
+    font-size: 1.3rem;
+    padding: 12px;
+    font-family: "Trirong", serif;
+    /* font-family: "Audiowide", sans-serif; */
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: rgb(12, 5, 5);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 17px;
+}
